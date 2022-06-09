@@ -3,6 +3,7 @@ package com.winnie.workoutlog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -49,6 +50,11 @@ class LoginActivity : AppCompatActivity() {
             error = true
         }
 
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            tilEmail.error = "Invalid Email Address"
+            error = true
+        }
+
         var password = etPassword.text.toString()
         if (password.isBlank()){
             tilPassword.error = "Password is required"
@@ -57,6 +63,10 @@ class LoginActivity : AppCompatActivity() {
         if (!error){
 
         }
+//        else
+//        {
+//            tilPassword.error = null
+//        }
     }
 
 

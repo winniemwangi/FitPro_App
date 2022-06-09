@@ -83,6 +83,8 @@ class SignUpActivity : AppCompatActivity() {
             error = true
         }
 
+        if (password!=confirm)
+            tilConfirm.error = ("Doesn't match")
 
     }
 }
