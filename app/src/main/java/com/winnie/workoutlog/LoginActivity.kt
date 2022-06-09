@@ -61,13 +61,14 @@ class LoginActivity : AppCompatActivity() {
             error = true
         }
         if (!error){
-
+            startActivity(Intent(this, HomeActivity::class.java))
         }
 //        else
 //        {
 //            tilPassword.error = null
 //        }
     }
+
 
 
     }
