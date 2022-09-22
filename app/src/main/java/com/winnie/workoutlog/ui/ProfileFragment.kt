@@ -1,10 +1,11 @@
-package com.winnie.workoutlog
+package com.winnie.workoutlog.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.winnie.workoutlog.R
 
 
 class ProfileFragment : Fragment() {
