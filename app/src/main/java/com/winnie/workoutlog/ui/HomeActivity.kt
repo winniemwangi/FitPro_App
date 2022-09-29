@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.winnie.workoutlog.R
 import com.winnie.workoutlog.databinding.ActivityHomeBinding
+import com.winnie.workoutlog.models.LoginResponse
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
@@ -21,7 +22,7 @@ class HomeActivity : AppCompatActivity() {
             editor.putString("USER_ID", "")
             editor.putString("PROFILE_ID", "")
             editor.apply()
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this,LoginResponse::class.java))
             logoutRequest()
 
         }
